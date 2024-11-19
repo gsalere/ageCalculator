@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="board">
+    <div class="boardDays">
+      <div class="dd">
+        <label for="day">DAY</label>
+        <input type="number" name="day" id="day" placeholder="DD">
+        <label for="error" class="error">This field is required</label>        
+      </div>
+      <div class="mm">
+        <label for="month">MONTH</label>
+        <input type="number" name="month" id="month" placeholder="MM">
+        <label for="error" class="error">This field is required</label>     
+      </div>
+      <div class="yy">
+        <label for="year">YEAR</label>
+        <input type="number" name="year" id="year" placeholder="YYYY">
+        <label for="error" class="error">This field is required</label>     
+      </div>
+      
+    </div>
+    <div class="btn">
+      <div class="line"></div>
+      <button><img src="./assets/images/icon-arrow.svg" alt=""></button>
+    </div>
+
+    <div class="calculate">
+      <div>
+       <span class="dynamic" id="dynamic-year">-- </span><span class="text"> years</span>        
+      </div>
+      <div>
+        <span class="dynamic" id="dynamic-month">-- </span><span class="text"> months</span> 
+      </div>
+      <div><span class="dynamic" id="dynamic-day">-- </span><span class="text"> days</span></div> 
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
